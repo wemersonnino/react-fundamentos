@@ -1,8 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Conhecimentos sobre os Fundamentos de React ✨
 
-## Getting Started
+## Descrição:
 
-First, run the development server:
+🧙‍♂️ Aprenda os fundamentos de React com este projeto!
+
+Demonstração de conhecimentos sobre os conceitos básicos de TypeScript e Orientação a Objetos.
+
+Este projeto demonstra conhecimentos sobre os conceitos básicos de TypeScript e Orientação a Objetos. Ele é dividido em seis partes específicas:
+
+* **Parte 1:** Introdução 💡
+* **Parte 2:** Componentes 📃
+* **Parte 3:** Fundamentos  🧰
+* **Parte 4:** Organizando a APP 🎨
+* **Parte 5:** Estado 💾
+* **Parte 6:** Comunicação 💬
+
+#### Ao final do projeto, você será capaz de:
+
+* _Criar componentes React_
+* _Utilizar props e filhos_
+* _Implementar eventos e navegação_
+* _Organizar o visual de uma aplicação_
+* _Gerenciar o estado de uma aplicação_
+* _Comunicar componentes entre si_
+  
+## Tecnologias utilizadas:
+
+* TypeScript 🦉
+* React ⚛️
+* SCSS 💅
+* Next.js 🚀
+
+## Demonstração:
+
+[Link para a demonstração da aplicação]
+
+# Como rodar o projeto:
+
+```bash
+git clone https://github.com/wemersonnino/react-fundamentos.git
+cd react-fundamentos
+yarn install
+yarn start
+```
+ ou
 
 ```bash
 npm run dev
@@ -14,23 +55,16 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) para rodar a pagina.
 
-You can start editing the page by modifying `app/conteudo-main.tsx`. The page auto-updates as you edit the file.
+## Contribuição:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Sinta-se à vontade para contribuir com este projeto!
 
-## Learn More
+## Licença:
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto está licenciado sob a licença MIT.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-------------------------------------------
+Feito com muita 🧰 e 🧙‍♂️ por Wemerson Nino
