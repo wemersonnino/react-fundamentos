@@ -1,12 +1,17 @@
-import Pagina from "@/components/Pagina";
-import '../../app/globals.css'
+import Pagina from "../../components/Pagina";
+import {useState} from "react";
 
-export default function PaginaSemEstado() {
-    let numero = 0;
+export default function PaginaComEstado() {
+    // let estadoInicial = useState(0);//estado incial
+    // const setEstadoInicial = estadoInicial[1];//function para alterar o estado inicial
+    const [
+        estadoInicial,//primeiro element returned pelo estado inicial
+        // setEstadoInicial] = useState(0); //maneira do mercado fazer
+        setEstadoInicial] = useState(0); //maneira do mercado fazer
+    //o comum é chamar a function que altera o estado de setNomeDaFunction tipo setEstadoInicial
 
     function increment() {
-        numero += 1;
-        console.log(numero)
+        setEstadoInicial(estadoInicial + 1);
     }
 
     /**
@@ -15,13 +20,14 @@ export default function PaginaSemEstado() {
 
     return (
         <>
-            <Pagina titulo={"Sem Estado"} subTitulo={"Pagina sem estado"}>
+            <Pagina titulo={"Com Estado"} subTitulo={"Pagina Com estado"}>
                 <section className={`flex flex-col justify-center
                           content-center items-center`}>
                     <span>Valor: </span>
-                    <span>{numero} </span>
+                    {/*<span>{estadoInicial[0]} </span>*/}
+                    <span>{estadoInicial} </span> {/*maneira que o mercado usa*/}
                 </section>
-                <button onClick={increment} className={'bg-blue-500 p-2 w-32 text-slate-50'}>
+                <button onClick={increment} className={'botao'}>
                     Incrementar
                 </button>
             </Pagina>

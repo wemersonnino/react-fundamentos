@@ -1,8 +1,8 @@
-export default function Conteudo() {
+export default function Conteudo(props:any) {
     return(
       <>
-        <section className={"flex justify-center item-center text-3x-l"}>
-            <p>Conteudo Component</p>
+        <section className={"flex flex-col text-3x-l p-0 flex-1"}>
+            {props.children}
         </section>
       </>
     );

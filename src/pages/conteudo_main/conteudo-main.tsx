@@ -1,23 +1,27 @@
-import '../../app/globals.css'
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-export default function Conteudo() {
+import Pagina from "@/components/Pagina";
+export default function ConteudoMain() {
     const ano = new Date().getFullYear();
+
+    function executar(){
+        console.log('Botao precionado')
+    }
     return(
         <>
-            <Header
-                titulo={"Estou na pagina de conteudo"}
-                subTtile={"Subtitle da Pagina de Conteudo"}
-            />
-            <main className={"flex flex-col justify-center justify-items-center items-center h-screen p-0 gap-5"}>
-                <section className={"flex justify-center item-center text-3x-l p-8 flex-1"}>
-                    <h1>Pagina de conteudos</h1>
-                </section>
-            </main>
-            <Footer
-                textoOne={`Feito com 💗 por Wemerson Nino`}
-                textoTwo={`Desenvolvido em ${ano}`}
-            />
+            <div className={"flex flex-col w-full"}>
+                <Pagina
+                    titulo={"Estou na pagina de conteudo_main"}
+                    subTitulo={"Subtitle da Pagina de ConteudoMain"}>
+                    <section className={`flex flex-col justify-center items-center`}>
+                        <h1 className={`mt-5`}>Pagina 2 - conteudo main</h1><br/>
+                        <button
+                         type="button"
+                         className={`botao`}
+                         onClick={executar}>
+                            Teste
+                        </button>
+                    </section>
+                </Pagina>
+            </div>
         </>
     );
 }
